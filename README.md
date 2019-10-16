@@ -46,9 +46,11 @@ resource "google_project_service" "project_services" {
 ```
 ### Objectives:
 
-Generally speaking as each environment goes up (dev -> nonprod -> prod) security for a project becomes more strict.  To achieve this copy the module's main.tf  
+Generally speaking as each environment goes up (dev -> nonprod -> prod) security for a project becomes more strict.  To achieve this change the environments main.tf modules source to point at the corresponding module environments folder.
 `_modules/services/dev/main.tf` into `_modules/services/nonprod/main.tf`  
 then reduce the amout of API's that are enabled or remove subnets upon project creation.  
+
+Inside the modules folder `/_modules/services/nonprod/main.tf` alter the list of APIs that get enabled.  The same goes for `/_modules/services/prod/main.tf` file.
 
 In each environment the only part that changes per environment main.tf is the **source** part of the module. 
   
