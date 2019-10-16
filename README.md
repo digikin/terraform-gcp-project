@@ -69,4 +69,13 @@ The commands are the same but to deploy a specific environment the `terraform pl
 For example:  
 To deploy a **dev** environment - (from the root directory)
 ```
-terraform init /
+terraform init /dev
+terraform plan /dev
+terraform apply /dev
+```  
+To deploy a **nonprod** environment - (from the root directory)
+```
+terraform init /nonprod
+terraform plan /nonprod
+terraform apply /nonprod
+```
