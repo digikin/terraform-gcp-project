@@ -3,7 +3,6 @@ provider "google" {
 }
 
 provider "google-beta" {
-
 }
 
 
@@ -13,7 +12,6 @@ resource "google_project" "project" {
   project_id          = "${var.project_name}"
   billing_account     = "${var.billing_account}"
   auto_create_network = "false"
-
 }
 
 data "google_project_services" "project" {

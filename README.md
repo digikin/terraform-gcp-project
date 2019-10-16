@@ -48,7 +48,8 @@ Generally speaking as each environment go up (dev -> nonprod -> prod) security f
 `_modules/services/dev/main.tf` into `_modules/services/nonprod/main.tf`  
 then reduce the amout of API's that are envabled upon project creation.  The same thing applies for the network module.  
 
-The only part that changes per environment main.tf is the source of the module. In each environments folder 
+The only part that changes per environment main.tf is the **source** part of the module. 
+  
 #### `./dev/main.tf`
 ```
 module "api_services" {
@@ -79,3 +80,4 @@ terraform init /nonprod
 terraform plan /nonprod
 terraform apply /nonprod
 ```
+
