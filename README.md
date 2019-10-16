@@ -23,7 +23,7 @@
 
 ### Features:
 
-This is a simple main.tf that has separated modules for activating APIs and subnetworks for a new project.  This terraform skeleton also shows how to benifit from breaking down sections into modules plus shows examples on how to use simple logic like `count.index` and `for_each` to keep the terraform code minimal. The goal of this is to create multi environment deployment from this package.  
+This is a simple main.tf that has separated modules for activating APIs and subnetworks for a new project.  This terraform skeleton also shows how to benifit from breaking down sections into modules plus uses examples on how to execute simple logic like `count.index` and `for_each` to keep the terraform code minimal. The goal of this is to create multi environment deployment from a single repo.  
 
 1. The network module uses a `for_each` loop
 ```
