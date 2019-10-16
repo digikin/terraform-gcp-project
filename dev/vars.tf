@@ -3,6 +3,11 @@ variable "region" {
   default = ""
 }
 
+variable "org_id" {
+  description = "Org ID number"
+  default = ""
+}
+
 variable "project_name" {
   description = "Project name"
   default = ""

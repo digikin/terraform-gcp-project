@@ -22,13 +22,11 @@ resource "google_compute_subnetwork" "default" {
   ip_cidr_range = each.value
   region = each.key
   network = "${google_compute_network.default.self_link}"
-
 }
 
 resource "google_compute_network" "default" {
     project = "${var.project}"  
     name = "default-vpc"
-    auto_create_network = "false"
 }
 
 

@@ -9,7 +9,7 @@ provider "google-beta" {
 
 resource "google_project" "project" {
   name                = "${var.project_name}"
-  org_id              = "955234961274"
+  org_id              = "${var.org_id}"
   project_id          = "${var.project_name}"
   billing_account     = "${var.billing_account}"
   auto_create_network = "false"
@@ -27,13 +27,12 @@ output "project_number" {
 
 
 module "api_services" {
-  source  = "../modules/services/"
+  source  = "../_modules/services/dev/"
   project = "${data.google_project_services.project.project}"
-
 }
 
 module "network_services" {
-  source  = "../modules/network/"
+  source  = "../_modules/network/dev/"
   project = "${data.google_project_services.project.project}"
   name    = "${data.google_project_services.project.project}"
 }
