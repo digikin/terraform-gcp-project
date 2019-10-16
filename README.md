@@ -1,4 +1,4 @@
-# Terraform folder structure to create a Google Cloud project
+## Terraform folder structure to create a Google Cloud project
 ```
 
 ├── _modules
