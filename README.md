@@ -16,6 +16,8 @@
 │   ├── main.tf
 │   └── vars.tf
 ├── nonprod
+│   ├── main.tf
+│   └── vars.tf
 ├── prod
 ```
 
