@@ -1,17 +1,20 @@
 ## Terraform folder structure to create a Google Cloud project
 ```
-
 ├── _modules
 │   ├── network
 │   │   ├── dev
 │   │   │   └── main.tf
 │   │   ├── nonprod
+│   │   │   └── main.tf
 │   │   └── prod
+│   │       └── main.tf
 │   └── services
 │       ├── dev
 │       │   └── main.tf
 │       ├── nonprod
+│       │   └── main.tf
 │       └── prod
+│           └── main.tf
 ├── dev
 │   ├── main.tf
 │   └── vars.tf
@@ -19,6 +22,8 @@
 │   ├── main.tf
 │   └── vars.tf
 ├── prod
+│   ├── main.tf
+│   └── vars.tf
 ```
 
 ### Features:
