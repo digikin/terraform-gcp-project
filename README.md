@@ -22,8 +22,8 @@
 │   ├── main.tf
 │   └── vars.tf
 ├── prod
-│   ├── main.tf
-│   └── vars.tf
+    ├── main.tf
+    └── vars.tf
 ```
 
 ### Features:
