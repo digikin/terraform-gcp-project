@@ -1,5 +1,5 @@
 ##
-## Edit this for a development environment
+## Edit this for a non-production environment
 ##
 
 provider "google" {
