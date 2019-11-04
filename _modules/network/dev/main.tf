@@ -5,7 +5,7 @@
 provider "google" {
   credentials = var.gcp_credentials
 }
-
+variable "gcp_credentials" {}
 variable "name" { }
 variable "project" { }
 
