@@ -1,3 +1,8 @@
+variable "gcp_credentials" {
+  description = "GCP region"
+  default = ""
+}
+
 variable "region" {
   description = "GCP region"
   default = ""
