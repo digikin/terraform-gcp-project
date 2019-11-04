@@ -1,9 +1,9 @@
 ##
 ## Edit this for a development environment
 ##
-variable "gcp_credentials" {}
+variable "credentials" {}
 provider "google" {
-  credentials = var.gcp_credentials
+  credentials = var.credentials
 }
 variable "project" { }
 
