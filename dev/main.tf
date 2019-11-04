@@ -27,6 +27,7 @@ output "project_number" {
 
 module "api_services" {
   source  = "../_modules/services/dev/"
+  credentials = var.gcp_credentials
   project = "${data.google_project_services.project.project}"
 }
 
