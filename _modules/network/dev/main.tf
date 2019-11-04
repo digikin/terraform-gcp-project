@@ -1,13 +1,10 @@
 ##
 ## Edit this for a development environment
 ##
-
+variable "gcp_credentials" {}
 provider "google" {
   credentials = var.gcp_credentials
 }
-variable "credentials" {}
-variable "name" { }
-variable "project" { }
 
 locals {
   subnet_data = {
