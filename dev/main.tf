@@ -1,6 +1,6 @@
 provider "google" {
   region = "${var.region}"
-  #credentials = "MY_CREDS"
+  credentials = var.gcp_credentials
 }
 
 provider "google-beta" {
