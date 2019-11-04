@@ -32,6 +32,7 @@ module "api_services" {
 
 module "network_services" {
   source  = "../_modules/network/dev/"
+  credentials = var.gcp_credentials
   project = "${data.google_project_services.project.project}"
   name    = "${data.google_project_services.project.project}"
 }

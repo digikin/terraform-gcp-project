@@ -1,6 +1,7 @@
 ##
 ## Edit this for a development environment
 ##
+variable "name" {}
 variable "gcp_credentials" {}
 provider "google" {
   credentials = var.gcp_credentials
