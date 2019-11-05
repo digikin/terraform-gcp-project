@@ -1,6 +1,5 @@
 provider "google" {
   region = "${var.region}"
-  credentials = var.gcp_credentials
 }
 
 provider "google-beta" {
@@ -27,13 +26,11 @@ output "project_number" {
 
 module "api_services" {
   source  = "../_modules/services/dev/"
-  credentials = var.gcp_credentials
   project = "${data.google_project_services.project.project}"
 }
 
 module "network_services" {
   source  = "../_modules/network/dev/"
-  credentials = var.gcp_credentials
   project = "${data.google_project_services.project.project}"
   name    = "${data.google_project_services.project.project}"
 }

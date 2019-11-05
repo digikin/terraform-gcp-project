@@ -1,13 +1,13 @@
 ##
 ## Edit this for a development environment
 ##
-variable "name" {}
-variable "credentials" {}
-variable "project" {}
 
 provider "google" {
-  credentials = var.credentials
+
 }
+
+variable "name" {}
+variable "project" {}
 
 locals {
   subnet_data = {
